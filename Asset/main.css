@@ -31,7 +31,7 @@ body {
 .name span {
   font-weight: bold;
 }
-.rowl {
+.row1 {
   display: grid;
   grid-template-columns: 1fr 30% 1fr;
   gap: 80px;
