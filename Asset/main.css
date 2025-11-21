@@ -1,19 +1,19 @@
 body {
   margin: 0;
-  background-color: url(./image/download.jpg);
+  background-image: url(./image/c46df1e25610da4e8301.jpg);
   background-size: cover;
   min-height: 100vh;
 }
 :root {
   --white: rgba(241, 234, 234);
-  --light: #eee7;
+  --light: #ee7;
   --yellow: #ffb107;
   --title: #b8810b;
   --dark: #555;
 }
 .container {
   width: 900px;
-  background-image: url(./image/dark-abstract-background-with-grunge-effect-scratches_278222-11502.avif);
+  background-color: #000;
   background-size: 30px;
   margin: 20px auto;
   padding: 3rem;
@@ -31,6 +31,7 @@ body {
 .name span {
   font-weight: bold;
 }
+/*row1*/
 .row1 {
   display: grid;
   grid-template-columns: 1fr 30% 1fr;
@@ -58,17 +59,156 @@ body {
   font-weight: bold;
   padding: 5px 15px 5px 5px;
   display: block;
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   transform: translateY(10px);
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0% 75% 0% 100% 50% 75% 100% 0% 100%);
 }
-
-.list .item .cotent {
+.list .item .content {
   line-height: 18px;
 }
 .list .item .content .job {
   color: var(--white);
-  font-weight: bolod;
+  font-weight: bold;
+}
+.contact ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contact li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.contact li img {
+  width: 20px;
+}
+.contact .link {
+  border-top: 1px solidvar(--light);
+  padding: 10px 0 0 0;
+}
+.contact .link li {
+  gap: 22.5px;
+}
+.contact .link li div:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  line-height: 0;
+  border-radius: 50%;
+  font-size: large;
+  font-family: monospace;
+}
+/*intro*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+.avatar {
+  width: 180px;
+  height: 180px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--dark), 0 0 0 6px var(--white);
+  position: relative;
+}
+.avatar img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130%;
+  border-bottom-left-radius: 41%;
+  border-bottom-right-radius: 41%;
+  border-top-left-radius: 41%;
+  border-top-right-radius: 41%;
+  object-fit: cover;
+}
+.intro .content {
+  text-align: justify;
+  padding-bottom: 50px;
+}
+body {
+  margin: 0;
+  background-image: url(./hinh-nen-dien-thoai-4k-6.jpg);
+  background-size: cover;
+  min-height: 100px;
+}
+:root {
+  --white: rgba(241, 234, 234);
+  --light: #ee7;
+  --yellow: #ffb107;
+  --title: #b8810b;
+  --dark: #555;
+}
+.container {
+  width: 900px;
+  background-image: url(./thumbnail_large.png);
+  background-size: 30px;
+  margin: 20px auto;
+  padding: 3rem;
+  box-sizing: border-box;
+  color: var(--light);
+  font-family: system-ui;
+  font-size: 12px;
+}
+.name {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+  color: var(--white);
+}
+.name span {
+  font-weight: bold;
+}
+/*row1*/
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr 30%1fr;
+  gap: 80px;
+}
+.title {
+  color: var(--title);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.list {
+  display: grid;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.list .item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+}
+.list .item .year span {
+  background-color: var(--yellow);
+  color: var(--dark);
+  font-weight: bold;
+  padding: 5px 15px 5px 5px;
+  display: block;
+  font-size: 0.8rem;
+  transform: translateY(10px);
+  clip-path: polygon(0% 0% 75% 0% 100% 50% 75% 100% 0% 100%);
+}
+.list .item .content {
+  line-height: 18px;
+}
+.list .item .content .job {
+  color: var(--white);
+  font-weight: bold;
 }
 .contact ul {
   padding: 0;
@@ -92,7 +232,7 @@ body {
 .contact .link li {
   gap: 22.5px;
 }
-.contact .link li dhv:nth-child(1) {
+.contact .link li div:nth-child(1) {
   width: 30px;
   height: 30px;
   background-color: var(--white);
@@ -106,6 +246,7 @@ body {
   font-size: large;
   font-family: monospace;
 }
+/*intro*/
 .intro {
   display: flex;
   flex-direction: column;
@@ -151,7 +292,7 @@ body {
 }
 .row2 {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 10fr 20fr 10fr;
   gap: 10px;
 }
 .row2 div:nth-child(1) {
@@ -166,4 +307,64 @@ body {
 .row2 div:nth-child(5) img,
 .row2 div:nth-child(7) img {
   width: 40%;
+}
+.row3 {
+  display: grid;
+  grid-template-columns: 1fr 30% 1fr;
+  gap: 80px;
+}
+.row3 .education {
+  padding-top: 100px;
+}
+.skill ul {
+  padding: 0;
+  list-style: none;
+  margin: 30px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 60px);
+  gap: 40px;
+}
+.skill li {
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+.skill li div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #2f2f2f;
+}
+.skill li div::before {
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  width: 120%;
+  height: 120%;
+  content: "";
+  background: conic-gradient(var(--yellow) 0 calc(var(--point) * 1%));
+  box-shadow: 0 0 10px #242323;
+  border-radius: 50%;
+  z-index: -1;
+}
+.skill li span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  color: var(--white);
+  text-shadow: 0 0 10px #000;
+}
+.language div span {
+  color: var(--white);
+}
+.language div {
+  padding-bottom: 10px;
 }
